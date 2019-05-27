@@ -1,3 +1,6 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/rhannie8/pen/gJwyKz.
+A simple Connect Four game. 
+Using HTML, CSS, JavaScript, jQuery
+
+You can find this one at https://mrsbynum8.github.io/Connect-Four/
 
  
