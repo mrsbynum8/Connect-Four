@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Roboto');
+
+body {
+	font-family: Roboto;
+	margin-left: 50px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.container { 
+	display: flex; 
+	justify-content: center;
+	margin: auto;
+}
+
+h1 {
+	font-family: 'Baloo Bhai';
+	font-size: 4rem;
+	margin: 10px;
+}
+
+h2 {
+	padding-top: 15px;
+	height: 45px;
+	width: 50%;
+	background: #0000cc;
+	color: white;
+	box-shadow: 5px 10px 10px #888888;
+	margin: 25px auto;
+	border-radius: 25px;
+}
+
+#svg {
+	width: 500px;
+	height: 435px;
+/* 	position: relative; */
+	background: #0000cc;
+	text-align: center;
+	margin: 5px auto 0px auto;
+	box-shadow: 5px 10px 30px #888888;
+}
+
+button {
+/* 	position: relative;
+	z-index: 100; */
+	margin: 5px auto 30px auto;
+}
+
+button:focus {
+	outline: none;
+}
+
+.myButton {
+	-moz-box-shadow: 3px 4px 5px 0px #899599;
+	-webkit-box-shadow: 3px 4px 5px 0px #899599;
+	box-shadow: 3px 4px 5px 0px #899599;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #bab1ba));
+	background:-moz-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-webkit-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-o-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-ms-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#bab1ba',GradientType=0);
+	background-color:#ededed;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:1px solid #d4baba;
+	display:inline-block;
+	cursor:pointer;
+	color:#052229;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab1ba), color-stop(1, #ededed));
+	background:-moz-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-webkit-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-o-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-ms-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bab1ba', endColorstr='#ededed',GradientType=0);
+	background-color:#bab1ba;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.red {
+	background: red;
+	color: white;
+	padding: 5px;
+	text-transform: capitalize;
+}
+
+.yellow {
+	background: yellow;
+	color: black;
+	padding: 5px;
+	text-transform: capitalize;
+}
+
+/* #MyRect {
+	margin: 0;
+  fill: blue;
+  stroke: blue;
+	width: 700px;
+	height: 30px;
+	box-shadow: 5px 10px 30px #888888;
+} */
