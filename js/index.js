@@ -38,23 +38,13 @@ const render = () => {
 	svg.innerHTML = doc;
 };
 
-window.clickSquare = (x, y) => {
-	if (!gameInPlay) {
-		return;
-	}
-	for (var i = grid.length - 1; i >= 0; i--) {
-		var row = grid[i];
-		var targetPlace = row[x];
-		if (!targetPlace.color) {
-			row[x] = { color: currentColor };
-			currentColor = currentColor === "red" ? "yellow" : "red";
-			document.getElementById("currentPlayer").innerHTML = `Current Color: <span class='${currentColor}'>${currentColor}</span>`
-			render();
-			calculateWinners();
-			return;
-		}
-	}
-};
+function aColorWins(color) {
+	gameInPlay = false;
+	h2.style.backgroundColor = color;
+	h2.style.color = "black";
+	document.getElementById("currentPlayer").innerHTML = `Thanks for playing!`;
+	document.getElementById("whoWon").innerHTML = `<span class='${color}'>${color}</span> Wins!`
+}
 
 function calculateWinners() {
 	for (var r = 0; r < grid.length; r++) {
@@ -109,11 +99,25 @@ function calculateWinners() {
 	// console.log("Is there a winner?");
 }
 
-function aColorWins(color) {
-	gameInPlay = false;
-	h2.style.backgroundColor = color;
-	h2.style.color = "black";
-	document.getElementById("currentPlayer").innerHTML = `Thanks for playing!`;
-	document.getElementById("whoWon").innerHTML = `<span class='${color}'>${color}</span> Wins!`
-}
+
+window.clickSquare = (x, y) => {
+	if (!gameInPlay) {
+		return;
+	}
+	for (var i = grid.length - 1; i >= 0; i--) {
+		var row = grid[i];
+		var targetPlace = row[x];
+		if (!targetPlace.color) {
+			row[x] = { color: currentColor };
+			currentColor = currentColor === "red" ? "yellow" : "red";
+			document.getElementById("currentPlayer").innerHTML = `Current Color: <span class='${currentColor}'>${currentColor}</span>`
+			render();
+			calculateWinners();
+			return;
+		}
+	}
+};
+
+
+
 restart();
